@@ -1,0 +1,109 @@
+* { /* ESSE ASTERISTICO É TODO O HTML*/
+    margin: 0 ; /* MARGEM EXTERNA SEPARAR UM ELEMENTO DO OUTRO*/
+    padding: 0; /*MARGEM INTERNA, ATÉ O CENTRO*/
+}
+
+body{
+    background: #828282 ; /*FUNDO PODE POR O QUE FOR*/
+}
+
+nav{/*É O COMPONENETE QUE ENGLOBA TODO O CÓDIGO DO HTML*/
+    margin: 150px auto; /*O AUTO REPLICA DE FORMA AUTOMATICA E CENTRALIZADA 
+    O VALOR INSERIDO PARA A MARGEM*/
+    width: 450px ; /*LARGURA DO NAV*/
+    height: 450px; /*ALTURA DO NAV*/
+}
+
+#check{ /*ESSE É O ID SENDO REFERÊNCIADO PELO # (É A CAIXA)*/
+    display: none; /*ESTÁ ESCONDENDO O ID DO CHECK*/
+}
+
+#central{ /*É O RÓTULO ESCRITO LÁ NO HTML*/
+    cursor: pointer; /*TROCA UMA SETINHA POR UMA MÃO*/
+    width: 150px;
+    height: 150px;
+    position: absolute; /*FICA FIXO NESSA POSIÇÃO (ABSOLUTE)*/
+    margin: 150px 150px;
+    z-index: 1; /*COLOCA ALGO SOBRE OUTRA COISA*/
+}
+
+#central img{ /*O # USA QUANDO É ID*/
+    width: 100%;
+    border-radius: 50%; /*DEIXA O ELEMENTO MAIS ARREDONDADO*/
+    transition: all .5s linear; /*FAZ A MOVIMENTAÇÃO DE TRANSIÇÃO DE FORMA 
+    INTEIRA E CONSTANTE DURANTE 5 SEGUNDOS*/
+}
+
+.link{ /*CLASSE USA O PONTO*/
+    position: absolute;
+    margin: 195px 195px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+
+/*DOIS PONTOS CRIA UM PSEUDOELEMENTO*/
+#check:checked ~ a #link_01{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateY(-195px); /* O Y É A VERTICAL*/
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link_02{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateX(195px); /* O X É A HORIZONTAL*/
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link_03{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateY(195px); /**/
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link_04{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateX(-195px); /**/
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link_05{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateX(125px) translateY(-125px); /**/
+    width: 90px;
+    height: 90px;
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link_06{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateX(125px) translateY(125px); /**/
+    width: 90px;
+    height: 90px;
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link_07{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateX(-125px) translateY(125px); /**/
+    width: 90px;
+    height: 90px;
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link_08{ /*QUANDO HOUVER O CLICK ELE REALIZA UMA AÇÃO
+    POR ISSO O ~ ELE PEGA UMA INFORMAÇÃO */
+    transform: translateX(-125px) translateY(-125px); /**/
+    width: 90px;
+    height: 90px;
+    transition: all .5s linear;
+}
+
+
+#check:checked ~ #central img{
+    transform: rotate(45deg);
+    /*width: 100px; ERA PARA DIMINUIR O TAMANHO DA BOLINHA QUANDO CLICASSE NELA
+    height: 100px;*/
+}
+

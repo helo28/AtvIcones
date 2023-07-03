@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+.btn{
+    font-family: 'Caprasimo', cursive;;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-verde{
+    background: greenyellow;
+    color: darkblue;
+    box-shadow: 0 5px 0 green;
+}
+
+.btn-lilas{
+    background: purple;
+    color: yellow;
+    box-shadow: 0 5px 0 rgb(90, 3, 90);
+}
+
+.btn-azul {
+    background: blue;
+    color: lightblue;
+    box-shadow: 0 5px 0 darkblue;
+}
+
+.btn-verde:hover{
+    background: darkblue;
+    color: greenyellow;
+}
+
+.btn-lilas:hover{
+    background: yellow;
+    color: purple;
+}
+
+.btn-azul:hover{
+    background: lightblue;
+    color: blue;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1</title>
+
+    <style>
+        body{
+            background: #ceecee; /* DANDO A COR DO FUNDO DA PÁGINA INTEIRA*/
+        }
+
+        .Corpo{
+            width: 1000px;
+            height: 400px;
+            box-shadow: 5px 5px 20px #000; /*CRIANDO UMA CAIXA SOMBREADA*/
+        }
+
+        .Item{ /*DEFININDO COMO VAI FICAR POSICIONADO A ESCRITA ITEM*/
+            list-style: none;
+            width: 250px;
+            padding-top: 10px;
+        }
+
+        .Azul{ /**/
+            height: 70px;
+            width: 70px;
+            background: #00f;
+            position: absolute;
+            transition: width 0.5s ease-out;
+        }
+
+        .Cinza{
+            height: 70px;
+            width: 250px;
+            background: #aaa;
+            z-index: 0;
+            
+        }
+
+        a{
+            position: absolute;
+            color: #fff;
+            text-decoration: none;
+            font-family: Arial;
+            z-index: 5; 
+            margin: 20px 80px;
+        }
+
+        .Item:hover {
+            cursor: pointer; /* COLOCANDO UMA SETINHA QUE POSSIBILITA CLICAR */
+        }
+
+        .Item:hover .Azul { /* COLOCANDO PARA FUNCIONAR O ATO DE TRANSIÇÃO NO AZUL*/
+            width: 250px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="Corpo"> 
+        <ul class="Menu">
+            <li class="Item">
+                <a href="#">Item 1</a>
+                <div class="Azul"></div>
+                <div class="Cinza"></div>
+            </li>
+            <li class="Item">
+                <a href="#">Item 2</a>
+                <div class="Azul"></div>
+                <div class="Cinza"></div>
+            </li>
+            <li class="Item">
+                <a href="#">Item 3</a>
+                <div class="Azul"></div>
+                <div class="Cinza"></div>
+            </li>
+            <li class="Item">
+                <a href="#">Item 4</a>
+                <div class="Azul"></div>
+                <div class="Cinza"></div>
+            </li>
+        </ul>
+    </div> 
+
+</body>
+
+</html>
